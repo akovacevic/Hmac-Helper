@@ -16,9 +16,9 @@ namespace HmacHelper
 
         static void Main(string[] args)
         {
-            var hmachandler = new HmacDelegatingHandler("apiKey", "secret", "HMAC");
+            var hmacHandler = new HmacDelegatingHandler("apiKey", "secret", "HMAC");
 
-            using (var client = new HttpClient(hmachandler))
+            using (var client = new HttpClient(hmacHandler))
             {
                 client.BaseAddress = new Uri(URL);
 
