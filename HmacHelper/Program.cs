@@ -31,6 +31,7 @@ namespace HmacHelper
                 {
                     // Parse the response body. Blocking!
                     var body = response.Content.ReadAsStringAsync().Result;
+                    Console.WriteLine(body);
                 }
                 else
                 {
